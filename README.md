@@ -19,35 +19,45 @@
 
 ## 🗺️ Project Workflow & Roadmap
 
-### Phase 1: Frontend & UI (Current Status)
+### Phase 1: Core UI & Components (Current Focus)
 - [x] **Project Setup**: Initialize Next.js with TypeScript & Tailwind.
+- [x] **Navigation**:
+  - [x] **Mobile Bottom Navigation Bar**: Fully responsive and functional.
+  - [ ] Desktop Sidebar.
 - [x] **Authentication UI**:
   - [x] Sign In Page (Desktop & Mobile Ready).
   - [x] Sign Up Page (Desktop & Mobile Ready).
 - [x] **Main Feed UI**:
   - [x] Mobile View (Vertical Scroll).
-  - [ ] Desktop View (Sidebar Layout) — *In Progress*.
-- [x] **Flicks 🎬 (Video Section)**:
-  - [x] Mobile View (Reels/Shorts Style UI).
-  - [ ] Desktop View — *Pending*.
+  - [ ] Desktop View — *In Progress*.
+
+### Phase 2: Feature Components
 - [x] **Smart Post Component**:
-  - [x] **Audio Player Integration**: Play/Pause logic with animated music icons.
+  - [x] **Audio Player**: Play/Pause logic with animated music icons.
   - [x] **Caption System**: "More/Less" text truncation.
   - [x] **Action Buttons**: Like, Comment, Share, and Save UI.
+- [ ] **Smart Flicks (Video) Component**:
+  - [x] **Mobile UI**: Reels/Shorts style layout.
+  - [x] **Caption System**: "More/Less" text truncation.
+  - [ ] **Video Player Logic**: Hold to Pause / Tap to Mute.
+  - [ ] **Action Buttons**: Like, Comment, Share, and Save UI.
 
-### Phase 2: Interactivity & State
-- [ ] **State Management**: Implement Redux Toolkit or Context API.
-- [ ] **Like Logic**: Handle real-time like counts and heart animations.
-- [ ] **Comments System**: Open a modal/drawer to view and add comments.
-- [ ] **Share Functionality**: Copy link to clipboard or share to other apps.
+### Phase 3: Additional Pages & Features (Pending)
+- [ ] **Explore Page**: Discover new content and trending posts.
+- [ ] **Notification Page**: Activity feed for likes, comments, and follows.
+- [ ] **Messaging System**: Direct messages and chat UI.
+- [ ] **Profile Page**: User bio, grid view of posts, and stats.
+- [ ] **Creation Tools**:
+  - [ ] **Create Post Page**: Upload images with caption and music.
+  - [ ] **Create Video Page**: Upload vertical videos for Flicks.
 
-### Phase 3: Backend & Data (Planned)
+### Phase 4: Backend & Data (Planned)
 - [ ] **Authentication Logic**: Connect UI to backend (Clerk/NextAuth).
 - [ ] **Database Setup**: MongoDB / PostgreSQL schema design.
 - [ ] **API Routes**: Create endpoints for fetching and posting data.
-- [ ] **File Upload**: Integrate Cloudinary or AWS S3 for image/audio/video storage.
+- [ ] **File Upload**: Integrate Cloudinary or AWS S3.
 
-### Phase 4: Deployment
+### Phase 5: Deployment
 - [ ] **Optimization**: Image/Video optimization and code splitting.
 - [ ] **Deploy**: Launch on Vercel.
 
