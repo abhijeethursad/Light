@@ -9,7 +9,6 @@ function ProfilePage() {
         <h1 className="text-xl font-bold">
           Profile
         </h1>
-
         <ComingSoon/>
 
     </div>

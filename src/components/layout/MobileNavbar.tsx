@@ -29,10 +29,7 @@ function MobileNavbar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <motion.div className="fixed bottom-0 left-0 right-0 z-50 "
-      initial={{ opacity:0 }}
-      animate={{ opacity:1, }}
-      transition={{ duration:0.5, ease:"easeOut" }}>
+    <div className="fixed bottom-0 left-0 right-0 z-50 ">
 
       <div className="flex items-center justify-between px-4 py-4 border-t border-gray-300 bg-white dark:bg-black backdrop-blur-xl dark:border-gray-700">
         
@@ -77,7 +74,7 @@ function MobileNavbar() {
         </MotionLink>
 
       </div>
-    </motion.div>
+    </div>
   );
 }
 

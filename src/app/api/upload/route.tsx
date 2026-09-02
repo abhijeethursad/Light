@@ -1,18 +1,21 @@
 import { NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 import path from "path";
 import { writeFile, readFile } from "fs/promises";
 
-export const POST = async (req) => {
+export const POST = async (req: NextRequest) => {
   const formData = await req.formData();
 
-  const file = formData.get("file");
-  const description = formData.get("description") || "No description";
-  const username = formData.get("username") || "User";
-  const songName = formData.get("songName") || "Original Audio";
+  const fileValue = formData.get("file");
+  const description = (formData.get("description") as string | null) ?? "No description";
+  const username = (formData.get("username") as string | null) ?? "User";
+  const songName = (formData.get("songName") as string | null) ?? "Original Audio";
 
-  if (!file) {
-    return NextResponse.json({ error: "No files received." }, { status: 400 });
+  if (!(fileValue instanceof File)) {
+    return NextResponse.json({ error: "No valid file received." }, { status: 400 });
   }
+
+  const file = fileValue;
 
   // 1. Save the Video File
   const buffer = Buffer.from(await file.arrayBuffer());

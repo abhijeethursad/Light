@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Ubuntu, Great_Vibes, Playwrite_RO } from "next/font/google";
 import "./globals.css";
-import MobileNavbar from "@/components/MobileNavbar";
-import Navbar from "@/components/Navbar";
+import MobileNavbar from "@/components/layout/MobileNavbar";
+import Navbar from "@/components/layout/Navbar";
   
 // 1. Configure Geist Sans and Geist Mono
 const geistSans = Geist({

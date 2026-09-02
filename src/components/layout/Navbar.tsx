@@ -26,11 +26,7 @@ const isActive = (path: string) => pathname === path;
 
 
   return (
-    <motion.nav className="sticky top-0 left-0 right-0 z-50"
-      initial={{ opacity:0 }}
-      animate={{ opacity:1, }}
-      transition={{ duration:0.5, ease:"easeOut" }}>
-
+    <nav className="sticky top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between p-4  bg-white dark:bg-black backdrop-blur-xl">
         <Link href="/" className="text-2xl font-bold">
           <FaPlus />
@@ -47,7 +43,7 @@ const isActive = (path: string) => pathname === path;
         </Link>
 
       </div>
-    </motion.nav>
+    </nav>
   );
 }
 

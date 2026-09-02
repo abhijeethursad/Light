@@ -20,7 +20,6 @@ function Story({ img, username }: StoryProps) {
             className="rounded-full object-cover aspect-square"
             placeholder="blur" 
             blurDataURL="..."
-
           />
         </div>
       </div>
